@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@kar.Web3/eth": [
+        "projects/eth/src/public-api.ts"
+      ],
+      "@kar.Web3/eth/config": [
+        "projects/eth/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/eth/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/eth/src/lib/proxy/*"]
+    }
+  }
+}

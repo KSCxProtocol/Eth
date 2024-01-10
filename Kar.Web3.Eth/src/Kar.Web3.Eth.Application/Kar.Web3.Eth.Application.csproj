@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Kar.Web3.Eth</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="8.0.1" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="8.0.1" />
+    <ProjectReference Include="..\Kar.Web3.Eth.Application.Contracts\Kar.Web3.Eth.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Kar.Web3.Eth.Domain\Kar.Web3.Eth.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "Kar.Web3.Eth.Domain.Shared": {
+      "path": "src/Kar.Web3.Eth.Domain.Shared/Kar.Web3.Eth.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.Domain": {
+      "path": "src/Kar.Web3.Eth.Domain/Kar.Web3.Eth.Domain.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.Application.Contracts": {
+      "path": "src/Kar.Web3.Eth.Application.Contracts/Kar.Web3.Eth.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.Application": {
+      "path": "src/Kar.Web3.Eth.Application/Kar.Web3.Eth.Application.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.EntityFrameworkCore": {
+      "path": "src/Kar.Web3.Eth.EntityFrameworkCore/Kar.Web3.Eth.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.MongoDB": {
+      "path": "src/Kar.Web3.Eth.MongoDB/Kar.Web3.Eth.MongoDB.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.HttpApi": {
+      "path": "src/Kar.Web3.Eth.HttpApi/Kar.Web3.Eth.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.HttpApi.Client": {
+      "path": "src/Kar.Web3.Eth.HttpApi.Client/Kar.Web3.Eth.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.TestBase": {
+      "path": "test/Kar.Web3.Eth.TestBase/Kar.Web3.Eth.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Kar.Web3.Eth.EntityFrameworkCore.Tests": {
+      "path": "test/Kar.Web3.Eth.EntityFrameworkCore.Tests/Kar.Web3.Eth.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Kar.Web3.Eth.MongoDB.Tests": {
+      "path": "test/Kar.Web3.Eth.MongoDB.Tests/Kar.Web3.Eth.MongoDB.Tests.abppkg",
+      "folder": "test"
+    },
+    "Kar.Web3.Eth.Domain.Tests": {
+      "path": "test/Kar.Web3.Eth.Domain.Tests/Kar.Web3.Eth.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Kar.Web3.Eth.Application.Tests": {
+      "path": "test/Kar.Web3.Eth.Application.Tests/Kar.Web3.Eth.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Kar.Web3.Eth.HttpApi.Host": {
+      "path": "host/Kar.Web3.Eth.HttpApi.Host/Kar.Web3.Eth.HttpApi.Host.abppkg",
+      "folder": "host"
+    },
+    "Kar.Web3.Eth.Web": {
+      "path": "src/Kar.Web3.Eth.Web/Kar.Web3.Eth.Web.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Kar.Web3.Eth.HttpApi.Client.ConsoleTestApp/Kar.Web3.Eth.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "Kar.Web3.Eth.Web.Host": {
+      "path": "host/Kar.Web3.Eth.Web.Host/Kar.Web3.Eth.Web.Host.abppkg",
+      "folder": "host"
+    },
+    "Kar.Web3.Eth.AuthServer": {
+      "path": "host/Kar.Web3.Eth.AuthServer/Kar.Web3.Eth.AuthServer.abppkg",
+      "folder": "host"
+    },
+    "Kar.Web3.Eth.Host.Shared": {
+      "path": "host/Kar.Web3.Eth.Host.Shared/Kar.Web3.Eth.Host.Shared.abppkg",
+      "folder": "host"
+    },
+    "Kar.Web3.Eth.Web.Unified": {
+      "path": "host/Kar.Web3.Eth.Web.Unified/Kar.Web3.Eth.Web.Unified.abppkg",
+      "folder": "host"
+    },
+    "Kar.Web3.Eth.Blazor": {
+      "path": "src/Kar.Web3.Eth.Blazor/Kar.Web3.Eth.Blazor.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.Blazor.Host": {
+      "path": "host/Kar.Web3.Eth.Blazor.Host/Kar.Web3.Eth.Blazor.Host.abppkg",
+      "folder": "host"
+    },
+    "Kar.Web3.Eth.Blazor.Server": {
+      "path": "src/Kar.Web3.Eth.Blazor.Server/Kar.Web3.Eth.Blazor.Server.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.Blazor.WebAssembly": {
+      "path": "src/Kar.Web3.Eth.Blazor.WebAssembly/Kar.Web3.Eth.Blazor.WebAssembly.abppkg",
+      "folder": "src"
+    },
+    "Kar.Web3.Eth.Blazor.Server.Host": {
+      "path": "host/Kar.Web3.Eth.Blazor.Server.Host/Kar.Web3.Eth.Blazor.Server.Host.abppkg",
+      "folder": "host"
+    }
+  }
+}

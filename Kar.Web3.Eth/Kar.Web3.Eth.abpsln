@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "Kar.Web3.Eth": {
+      "path": "Kar.Web3.Eth.abpmdl"
+    }
+  }
+}
