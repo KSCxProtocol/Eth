@@ -1,3 +1,85 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
+<div>
+    <!-- #Left Sidebar ==================== -->
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <!-- ### $Sidebar Header ### -->
+            <div class="sidebar-logo">
+                <div class="peers ai-c fxw-nw">
+                    <div class="peer peer-greed">
+                        <a class="sidebar-link td-n" href="kanban">
+                            <div class="peers ai-c fxw-nw">
+                                <div class="peer">
+                                    <div class="logo"><img src="adminator/logoo.png" alt="" ></div>
+                                </div>
+                                <div class="peer peer-greed"><h4 class="lh-1 mB-0 logo-text">Karpine</h4></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="peer">
+                        <div class="mobile-toggle sidebar-toggle">
+                            <a href="" class="td-n">
+                                <i class="ti-arrow-circle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ### $Sidebar Menu ### -->
+            <ul class="sidebar-menu scrollable pos-r">
+                <li class="nav-item mT-30 actived">
+                    <a class="sidebar-link" href="Home">
+                        <span class="icon-holder"><i class="c-blue-500 fas fa-home"></i></span><span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item"><a class="sidebar-link" href="karpine"><span class="icon-holder"><i class="c-blue-500 fas fa-network-wired"></i> </span><span class="title">Blocks</span></a></li>
+                
+                <li class="nav-item"><a class="sidebar-link" href="Dicts"><span class="icon-holder"><i class="c-blue-500 fas fa-dollar-sign"></i> </span><span class="title">Transactions</span></a></li>
+                <li class="nav-item"><a class="sidebar-link" href="Locationaudits"><span class="icon-holder"><i class="c-blue-500 fas fa-map-pin"></i> </span><span class="title">Addresses</span></a></li>
+                <li class="nav-item"><a class="sidebar-link" href="sale"><span class="icon-holder"><i class="c-blue-500 fas fa-wrench"></i> </span><span class="title">Tools</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- #Main ============================ -->
+<div class="page-container">
+    <!-- ### $Topbar ### -->
+    <div class="header navbar">
+        <div class="header-container">
+            <ul class="nav-left">
+                <li>
+                    <a id='sidebar-toggle' class="sidebar-toggle" href="javascript:void(0);">
+                        <i class="ti-menu"></i>
+                    </a>
+                </li>
+                <li class="search-box">
+                    <a class="search-toggle no-pdd-right" href="javascript:void(0);">
+                        <i class="search-icon ti-search pdd-right-10"></i>
+                        <i class="search-icon-close ti-close pdd-right-10"></i>
+                    </a>
+                </li>
+                <li class="search-input">
+                    <div class="input-group align-items-center">
+                        <input class="form-control" type="text" placeholder="Search..." >                        
+                    </div>
+                </li>
+            </ul>            
+        </div>
+    </div><!-- ### $App Screen Content ### -->
+    <main class="main-content bgc-grey-100">
+        <div id="mainContent">
+            <div class="container-fluid ml-2">
+                <div class="row">
+                    <div class="col-md-12">
+                        @Body
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bdT ta-c p-30 lh-0 fsz-sm c-grey-600">
+        <span>Copyright © 2023 <a href="https://Karpine.io" target="_blank" title="karpine">Karpine</a>. All rights reserved.</span>
+    </footer>
+</div>
+
+<script src="/adminator/main.js"></script>

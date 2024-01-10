@@ -1,7 +1,148 @@
-﻿@page "/"
+﻿@page "/Home"
+<div class="masonry-item  w-100">
+    <div class="row gap-20">
 
-<PageTitle>Home</PageTitle>
+        <div class='col-md-3'>
+            <div class="layers bd bgc-white p-20">
+                <div class="layer w-100 mB-10">
+                    <h4 class="lh-1">Karpine</h4>
+                </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer">
+                            <h5 class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-purple-50 c-purple-500">NEO V1.0 TEST DATA</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+        <div class='col-md-3'>
+            <div class="layers bd bgc-white p-20">
+                <div class="layer w-100 mB-10">
+                    <h4 class="lh-1">Blocks</h4>
+                </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer">
+                            <h5 class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-green-50 c-green-500">977787</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class='col-md-3'>
+            <div class="layers bd bgc-white p-20">
+                <div class="layer w-100 mB-10">
+                    <h4 class="lh-1">BlockChain Status</h4>
+                </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer">
+                            <h5 class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-red-50 c-red-500">LIVE</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class='col-md-3'>
+            <div class="layers bd bgc-white p-20">
+                <div class="layer w-100 mB-10">
+                    <h4 class="lh-1">Transactions Count</h4>
+                </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer">
+                            <h5 class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">0</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row gap-20">
+
+        <div class='col-md-3'>
+            <div class="layers bd bgc-white p-20">
+                <div class="layer w-100 mB-10">
+                    <h5 class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">3455</h5>
+                </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer">
+                            <h4 class="lh-1">Catalog Products</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class='col-md-3'>
+            <div class="layers bd bgc-white p-20">
+                <div class="layer w-100 mB-10">
+                    <h5 class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-purple-50 c-purple-500">100</h5>
+                </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer">
+                            <h4 class="lh-1">NFT's</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class='col-md-3'>
+            <div class="layers bd bgc-white p-20">
+                <div class="layer w-100 mB-10">
+                    <h5 class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-green-50 c-green-500">4992</h5>
+                </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer">
+                            <h4 class="lh-1">Digital Twins</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class='col-md-3'>
+            <div class="layers bd bgc-white p-20">
+                <div class="layer w-100 mB-10">
+                    <h5 class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-red-50 c-red-500">15</h5>
+                </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer">
+                            <h4 class="lh-1">Wallets</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+<div class='col-md-6'>
+    <h3>Latest Blocks</h3>
+    <SfGrid TValue="DataModal" DataSource="@Data" AllowPaging="true" GridLines="GridLine.Both">
+        <GridPageSettings PageSize="10"></GridPageSettings>    
+    <GridColumns>
+        <GridColumn Field=@nameof(DataModal.Index) HeaderText="Index" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(DataModal.Transactions) HeaderText="Transactions" Width="150"></GridColumn>
+        <GridColumn Field=@nameof(DataModal.DateTime) HeaderText="DateTime" Type="ColumnType.Date"Width="130"></GridColumn>
+        <GridColumn Field=@nameof(DataModal.Size) HeaderText="Size(Bytes)" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+</div>
