@@ -81,6 +81,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer peer-greed">                            
+                        </div>
+                        <div class="pos-r">
+                            <SfButton type="button" class="d-ib lh-0 va-m fw-600 bdrs-0em pX-15 pY-15 bgc-blue-50 c-blue-500">More Info --></SfButton>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -94,6 +103,15 @@
                     <div class="peers ai-sb fxw-nw">
                         <div class="peer">
                             <h4 class="lh-1">NFT's</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer peer-greed">
+                        </div>
+                        <div class="pos-r">
+                            <SfButton type="button" class="d-ib lh-0 va-m fw-600 bdrs-0em pX-15 pY-15 bgc-purple-50 c-purple-500">More Info --></SfButton>
                         </div>
                     </div>
                 </div>
@@ -113,6 +131,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer peer-greed">
+                        </div>
+                        <div class="pos-r">
+                            <SfButton type="button" class="d-ib lh-0 va-m fw-600 bdrs-0em pX-15 pY-15 bgc-green-50 c-green-500">More Info --></SfButton>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -129,11 +156,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="layer w-100">
+                    <div class="peers ai-sb fxw-nw">
+                        <div class="peer peer-greed">
+                        </div>
+                        <div class="pos-r">
+                            <SfButton type="button" class="d-ib lh-0 va-m fw-600 bdrs-0em pX-15 pY-15 bgc-red-50 c-red-500">More Info --></SfButton>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <br/>
+<div class="row">
 <div class='col-md-6'>
     <h3>Latest Blocks</h3>
     <SfGrid TValue="DataModal" DataSource="@Data" AllowPaging="true" GridLines="GridLine.Both">
@@ -145,4 +182,17 @@
         <GridColumn Field=@nameof(DataModal.Size) HeaderText="Size(Bytes)" Width="120"></GridColumn>
     </GridColumns>
 </SfGrid>
+</div>
+<div class='col-md-6'>
+    <h3>Latest Transactions</h3>
+    <SfGrid TValue="DataModal" DataSource="@Data" AllowPaging="true" GridLines="GridLine.Both">
+        <GridPageSettings PageSize="10"></GridPageSettings>    
+    <GridColumns>
+        <GridColumn Field=@nameof(DataModal.Index) HeaderText="Index" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(DataModal.Transactions) HeaderText="Transactions" Width="150"></GridColumn>
+        <GridColumn Field=@nameof(DataModal.DateTime) HeaderText="DateTime" Type="ColumnType.Date"Width="130"></GridColumn>
+        <GridColumn Field=@nameof(DataModal.Size) HeaderText="Size(Bytes)" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+</div>
 </div>

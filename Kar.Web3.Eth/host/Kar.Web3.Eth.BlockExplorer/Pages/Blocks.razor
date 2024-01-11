@@ -1,0 +1,14 @@
+﻿@page "/Blocks"
+
+<div class="row">
+    <h2>Blocks</h2>
+    <SfGrid TValue="BlocksData" DataSource="@Data" AllowPaging="true" GridLines="GridLine.Both">
+        <GridPageSettings PageSize="10"></GridPageSettings>
+        <GridColumns>
+            <GridColumn Field=@nameof(BlocksData.Index) HeaderText="Index" Width="120"></GridColumn>
+            <GridColumn Field=@nameof(BlocksData.Transactions) HeaderText="Transactions" Width="150"></GridColumn>
+            <GridColumn Field=@nameof(BlocksData.DateTime) HeaderText="DateTime" Type="ColumnType.Date" Width="130"></GridColumn>
+            <GridColumn Field=@nameof(BlocksData.Transactions) HeaderText="Size(Bytes)" Width="120"></GridColumn>
+        </GridColumns>
+    </SfGrid>
+</div>

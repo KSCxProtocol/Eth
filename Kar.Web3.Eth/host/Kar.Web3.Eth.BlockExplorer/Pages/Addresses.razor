@@ -1,0 +1,14 @@
+﻿@page "/Addresses"
+
+<div class="row">
+    <h2>Addresses</h2>
+    <SfGrid @ref="DefaultGrid" TValue="AddressesData" DataSource="@Data" AllowPaging="true" GridLines="GridLine.Both">
+        <GridPageSettings PageSizes="10" ></GridPageSettings>
+        <GridColumns>
+            <GridColumn Field=@nameof(AddressesData.Address) HeaderText="Index" Width="120"></GridColumn>
+            <GridColumn Field=@nameof(AddressesData.Created) HeaderText="Transactions" Width="150"></GridColumn>
+            <GridColumn Field=@nameof(AddressesData.Ended) HeaderText="DateTime" Type="ColumnType.Date" Width="130"></GridColumn>
+            <GridColumn Field=@nameof(AddressesData.Transactions) HeaderText="Size(Bytes)" Width="120"></GridColumn>
+        </GridColumns>
+    </SfGrid>
+</div>
